@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta content="IE=edge" http-equiv="X-UA-Compatible">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<title>efelle</title><!-- fonts -->
+	<link href="https://fonts.gstatic.com" rel="preconnect">
+	<link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+	<link href="https://fonts.gstatic.com" rel="preconnect">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+	<link href="https://fonts.gstatic.com" rel="preconnect">
+	<link href="https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"><!-- styleseets -->
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/normalize.css" rel="stylesheet">
+	<link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<nav class="nav">
+			<a href="/"><img alt="efelle logo" class="logo" src="images/efelle.png"></a>
+			<div class="nav__phone">
+				866.396.7520
+			</div><label class="navbar__toggle" for="chkToggle"><i class="fa fa-bars"></i></label><input id="chkToggle" type="checkbox">
+			<ul class="nav__list">
+				<li class="nav__item">
+					<a class="nav__link" href="#">ABOUT</a>
+				</li>
+				<li class="nav__item">
+					<a class="nav__link" href="#services">SERVICES</a>
+				</li>
+				<li class="nav__item">
+					<a class="nav__link" href="#">PORTFOLIO</a>
+				</li>
+				<li class="nav__item">
+					<a class="nav__link" href="#">BLOG</a>
+				</li>
+				<li class="nav__item">
+					<a class="nav__link" href="#">REPUTATION</a>
+				</li>
+				<li class="nav__item">
+					<a class="nav__link" href="#">CONTACT US</a>
+				</li>
+				<li class="nav__item">
+					<a class="nav__link" href="#">CLIENT LOGIN</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<section class="main-banner">
+		<div class="banner-content">
+			<h2>Outstanding Quality</h2>
+			<h1>VISION</h1>
+			<div class="banner-line-1">
+				<hr>
+			</div>
+			<h4>We capture and bring your remodeling ideas to life.</h4><button class="btn--cta">Enquire</button>
+		</div>
+	</section>
+	<section class="container-fluid services" id="services">
+		<div class="row no-gutters services-top text-center">
+			<div class="col-lg-12">
+				<h3>TURN YOUR DREAMS INTO REALITY WITH A REMODEL FROM</h3>
+				<h2>SEATTLE'S TOP GENERAL CONTRACTOR</h2>
+				<div class="services-line-1">
+					<hr>
+				</div>
+			</div>
+		</div>
+		<div class="row no-gutters text-center">
+			<div class="services-image col-xl-3 col-md-6">
+				<a class="services-link" href="#">
+				<div class="circle-overlay text-center">
+					<h3>Kitchens</h3>
+				</div><img alt="kitchens" class="img-fluid" src="images/kitchens.jpg"></a>
+			</div>
+			<div class="services-image col-xl-3 col-md-6">
+				<a class="services-link" href="#">
+				<div class="circle-overlay text-center">
+					<h3>Bathrooms</h3>
+				</div><img alt="bathrooms" class="img-fluid" src="images/bathrooms.jpg"></a>
+			</div>
+			<div class="services-image col-xl-3 col-md-6">
+				<a class="services-link" href="#">
+				<div class="circle-overlay text-center">
+					<h3>Remodels</h3>
+				</div><img alt="remodels" class="img-fluid" src="images/remodels.jpg"></a>
+			</div>
+			<div class="services-image col-xl-3 col-md-6">
+				<a class="services-link" href="#">
+				<div class="circle-overlay text-center">
+					<h3>Decks</h3>
+				</div><img alt="decks" class="img-fluid" src="images/decks.jpg"></a>
+			</div>
+		</div>
+	</section>
+	<footer class="footer">
+		<div class="footer__top">
+			<address>
+				<span>efelle creative<br>
+				901 5th Ave<br>
+				suite 1950<br>
+				Seattle, WA 98164</span>
+			</address>
+			<div class="footer__phone">
+				<span class="">206.384.4909</span><br>
+				<span class="">866.396.7520</span><br>
+				<a href="https://www.facebook.com/SeattleWebsiteDesign/" target="_blank"><img src="images/facebook.png" class="footer__social-icon" alt="facebook icon"></a> <a href="https://www.pinterest.com/efellecreative/" target="_blank"><img src="images/pinterest.png" class="footer__social-icon" alt="pinterest icon"></a>
+			</div>
+		</div>
+		<div class="footer__bottom">
+			&copy; 
+			<script>
+			         document.write(new Date().getFullYear())
+			</script> efelle Creative. All rights reserved.<br>
+			<a href="#">Legal Information</a>
+		</div>
+	</footer>
+	<script>
+	         //  script for active nav links
+	          let activeLinks = document.querySelectorAll("a.nav__link");
+	           activeLinks.forEach((activeLink) => {
+	            activeLink.addEventListener("click", function () {
+	              activeLinks.forEach((al) => al.classList.remove("active"));
+	              this.classList.add("active");
+	            });
+	          });
+	</script>
+</body>
+</html>
